@@ -1,11 +1,8 @@
-a, b = int(input()), list(input())
-res, ret = 0, []
-for i in range(len(b)):
-    res = a * int(b[i])
-    print(res)
-    if i == 0:
-        ret.append(res)
-    else:
-        ret.append(res * (10 * i))
-print(i for i in ret)
-print(sum(ret))
+a, b = int(input()), input()
+
+a1 = a * int(b[2])
+a2 = a * int(b[1])
+a3 = a * int(b[0])
+a4 = a * int(b)
+
+print(a1, a2, a3, a4, sep="\n")
